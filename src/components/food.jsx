@@ -1,5 +1,6 @@
-import React, {useContext, useState} from 'react'
+import React, {useContext} from 'react'
 import { StoreContext } from '../context/storeContext'
+
 
 const Food = ({food}) => {
 
@@ -29,7 +30,6 @@ const Food = ({food}) => {
         <div className='flex flex-col gap-2 p-3'>
             <div className='flex items-center justify-between max-md:flex-col'>
                 <h3 className='font-bold text-[18px]'>{food.name}</h3>
-                <div className='text-orange-500'>{Math.floor(Math.random() * 5)} star</div>
             </div>
             <p className='text-gray-500'>{food.description}</p>
             <p className='text-orange-500 font-bold text-[22px]'>${food.price}</p>
