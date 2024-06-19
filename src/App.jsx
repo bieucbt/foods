@@ -34,7 +34,7 @@ const App = () => {
           max-md:px-5'>
             <Header scrollY={scrollY} />
             <Routes>
-              <Route path='/foods/' element={<Home />} />
+              <Route path='*' element={<Home />} />
               <Route path='/cart' element={<Cart />} />
               <Route path='/checkout' element={<CheckOut />} />
             </Routes>
