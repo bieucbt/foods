@@ -25,7 +25,7 @@ const Header = ({scrollY}) => {
         <div className=' w-full  max-w-[1280px] h-[100px] flex items-center max-sm:justify-between
         m-auto px-10 max-lg:px-5'>
             <div>
-                <Link to='/' className='text-[40px] font-bold text-orange-600'>Foods.</Link>
+                <Link to='*' className='text-[40px] font-bold text-orange-600'>Foods.</Link>
             </div>
             <nav className='flex-1 max-sm:hidden'>
                 <ul className='flex items-center justify-center gap-4'>
