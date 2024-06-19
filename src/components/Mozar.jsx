@@ -9,7 +9,7 @@ const Mozar = () => {
   
   
   return (
-    <div className={`absolute z-50 w-full h-full 
+    <div className={`fixed z-50 w-full h-full 
      rgba-Black ${activeMozar ? '' : 'hidden'}
      grid  animation-fadeIn-1s`}>
         <SignUp />
