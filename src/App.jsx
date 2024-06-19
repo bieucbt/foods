@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useContext } from 'react'
-import {HashRouter, Routes, Route} from 'react-router-dom'
+import React, { useEffect, useState} from 'react'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import StoreContextProvider from './context/storeContext'
 import './App.css'
 import Header from './components/Header'
@@ -26,7 +26,7 @@ const App = () => {
   }, [])
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <StoreContextProvider>
         <Mozar  setScrollY={setScrollY} />
         <main className='w-full h-full bg-white'>
@@ -42,7 +42,7 @@ const App = () => {
         </main>
         <Footer />
       </StoreContextProvider>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
